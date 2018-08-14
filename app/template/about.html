@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 {% block page_body %}
-    <div class="container">
-    </div>
+    {{ super() }}
+    <h2>
+        关于博客
+    </h2>
+    <p>基于个人开源博客系统<a href="https://github.com/JaeGerW2016/flask-blog" rel="nofollow"  target="_blank">flask-blog</a></p>
+    <p>欢迎大家fork或给我issue</p>
+    <p>博客目的：知识总结</p>
+
+    <h2>
+        关于我
+    </h2>
+    <p>普通程序猿</p>
+
+    <h2>
+        联系我
+    </h2>
+    <ul>
+        <li>
+            <a href="https://github.com/JaeGerW2016/" target="_blank">Github</a>
+        </li>
+         <li>
+            <a href="https://www.jianshu.com/u/42462a43083c/" target="_blank">简书</a>
+        </li>
+    </ul>
 {% endblock %}
