@@ -1,3 +1,4 @@
+#! -*- coding: utf-8 -*-
 from . import db, login_manager
 from flask_login import UserMixin, AnonymousUserMixin
 from markdown import markdown
@@ -64,6 +65,7 @@ class Post(db.Model):
 
     comments = db.relationship('Comment', backref='post')
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
 
     @staticmethod
     def on_body_change(target, value, oldvalue, initianor):
@@ -90,3 +92,27 @@ class Comment(db.Model):
     created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+
+class Category(db.Model):
+    __tablename__ = 'category'
+    id = db.Column(db.Integer, primary_key=True)
+    category = db.Column(db.Unicode(128), unique=True)
+    posts = db.relationship('Post', backref='category', lazy='dynamic')
+
+    @staticmethod
+    def add_categorys():
+        categorys = [
+            u'博客开发',
+            u'生活点滴',
+            u'默认分类'
+        ]
+        for c in categorys:
+            category = Category.query.filter_by(category=c).first()
+            if category is None:
+                category = Category(category=c)
+            db.session.add(category)
+        db.session.commit()
+
+    def __repr__(self):
+        return '<Category %r>' % self.category
