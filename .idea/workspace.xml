@@ -10,6 +10,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Sample$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1533722164461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_blog$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1534215489911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sample$manager.coverage" NAME="manager Coverage Results" MODIFIED="1533025520557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -391,6 +392,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989899" visible="true" weight="0.18901454" />
       <window_info id="Structure" order="1" sideWeight="0.5010101" side_tool="true" weight="0.18174475" />
@@ -400,13 +402,13 @@
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" x="10" y="278" width="1259" height="203" id="Find" order="3" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3219178" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3219178" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32901135" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49960285" visible="true" weight="0.37123287" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49960285" weight="0.37123287" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50039715" weight="0.3260274" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32739726" />
       <window_info anchor="bottom" id="DB Execution Console" order="13" />
